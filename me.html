@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人中心</title>
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/me.css">
+</head>
+
+<body>
+
+  <nav class="container nav-wr">
+    <ul class="nav-other bd">
+      <li>
+        <a href="index.html">首页</a>
+      </li>
+      <li>
+        <a href="eventsCenter.html">事项中心</a>
+      </li>
+      <li>
+        <a href="policyFiles.html">政策文件</a>
+      </li>
+      <li>
+        <a href="QAIntelligence.html">智能问答</a>
+      </li>
+      <li>
+        <a href="appCenter.html">APP中心</a>
+      </li>
+      <li class="nav-other-li__active">
+        <a href="###">个人中心</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container me">
+    <div class="bd me-cnt">
+      <div class="me-cnt-l">
+        <div class="me-cnt-tit">用户信息</div>
+        <div class="me-cnt-bdl">
+          <div class="cntl-thumb">
+            <i class="icon-thumb"></i>
+            <span class="cntl-thumb-uname" id="userClass">普通用户</span>
+            <div class="identify-class">
+              <i class="identify-icon-driver" data-index="0"></i>
+              <i class="identify-icon-idcard" data-index="1"></i>
+              <i class="identify-icon-wechat" data-index="2"></i>
+              <i class="identify-icon-alipay" data-index="3"></i>
+              <i class="identify-icon-unionpay" data-index="4"></i>
+            </div>
+          </div>
+          <ul class="cntl-items" id="myInfo">
+            <li data-index="1">
+              <div>
+                <i class="items-icon-geren"></i>
+                <span>个人信息</span>
+              </div>
+            </li>
+            <li data-index="2">
+              <div>
+                <i class="items-icon-shiming"></i>
+                <span>实名认证</span>
+              </div>
+            </li>
+            <li data-index="3">
+              <div>
+                <i class="items-icon-xinxi"></i>
+                <span>消息中心</span>
+              </div>
+            </li>
+            <li data-index="4">
+              <div>
+                <i class="items-icon-mima"></i>
+                <span>修改密码</span>
+              </div>
+            </li>
+          </ul>
+          <div class="cntl-exit">退出登录</div>
+        </div>
+      </div>
+      <div class="me-cnt-r">
+        <div class="me-cnt-tit">推荐服务</div>
+        <div class="me-cnt-bdr-up">
+          <i class="icon-action icon-last"></i>
+          <div class="up-services">
+            <ul>
+              <li>
+                <i class="service-icon-huzheng"></i>
+                <span class="services-txt">户证业务</span>
+              </li>
+              <li>
+                <i class="service-icon-wangan"></i>
+                <span class="services-txt">网安业务</span>
+              </li>
+              <li>
+                <i class="service-icon-churujing"></i>
+                <span class="services-txt">出入境业务</span>
+              </li>
+              <li>
+                <i class="service-icon-zhian"></i>
+                <span class="services-txt">治安业务</span>
+              </li>
+              <li>
+                <i class="service-icon-xiaofang"></i>
+                <span class="services-txt">消防业务</span>
+              </li>
+              <li>
+                <i class="service-icon-jiaoguan"></i>
+                <span class="services-txt">交管业务</span>
+              </li>
+            </ul>
+          </div>
+          <i class="icon-action icon-next"></i>
+        </div>
+        <div class="me-cnt-bdr-down">
+          <div class="am-tabs" data-am-tabs>
+            <ul class="am-tabs-nav am-nav am-nav-tabs">
+              <li class="am-active">
+                <a href="#tab1">我的办件</a>
+              </li>
+              <li>
+                <a href="#tab2">我的咨询</a>
+              </li>
+              <li>
+                <a href="#tab3">我的评价</a>
+              </li>
+              <li>
+                <a href="#tab4">我的收藏</a>
+              </li>
+            </ul>
+            <div class="am-tabs-bd">
+              <div class="am-tab-panel am-active" id="tab1">
+                <div class="tab-hd">
+                  <div class="tab-cnt-tit">业务名称</div>
+                  <div class="tab-news-time">申请时间</div>
+                  <div class="tab-news-status">已办结</div>
+                  <div class="tab-comment-status"></div>
+                </div>
+                <ul class="tab-cnt">
+                  <li>
+                    <div class="tab-cnt-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
+                    <div class="tab-news-time">2017.08.20</div>
+                    <div class="tab-news-status news-status__done">已办结</div>
+                    <div class="tab-comment-status">评价</div>
+                  </li>
+                  <li>
+                    <div class="tab-cnt-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
+                    <div class="tab-news-time">2017.08.21</div>
+                    <div class="tab-news-status">办理中</div>
+                    <div class="tab-comment-status comment-status__disabled">评价</div>
+                  </li>
+                  <li>
+                    <div class="tab-cnt-tit">出生登记（持省内新版出生证）</div>
+                    <div class="tab-news-time">2017.07.30</div>
+                    <div class="tab-news-status news-status__done">已办结</div>
+                    <div class="tab-comment-status  comment-status__done">已评价</div>
+                  </li>
+                  <li>
+                    <div class="tab-cnt-tit">看守所被监管人员律师会见网上预约</div>
+                    <div class="tab-news-time">2017.06.17</div>
+                    <div class="tab-news-status news-status__withdraw">已撤销</div>
+                    <div class="tab-comment-status  comment-status__disabled">评价</div>
+                  </li>
+                  <li>
+                    <div class="tab-cnt-tit">看守所被监管人员律师会见网上预约</div>
+                    <div class="tab-news-time">2017.03.23</div>
+                    <div class="tab-news-status news-status__draft">草稿</div>
+                    <div class="tab-comment-status">评价</div>
+                  </li>
+                </ul>
+                <div class="pg-wr">
+                  <div>上一页</div>
+                  <ul class="pg">
+                    <li class="pg__active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>...</li>
+                    <li>12</li>
+                  </ul>
+                  <div class="pg__active">下一页</div>
+                </div>
+              </div>
+              <div class="am-tab-panel" id="tab2">
+                <div class="tab-hd">
+                  <div class="tab-cnt-tit">咨询列表</div>
+                  <div class="tab-news-time">申请时间</div>
+                  <div class="tab-news-status">状态</div>
+                  <div class="tab-comment-status"></div>
+                </div>
+                <ul class="tab-cnt">
+                  <li>
+                    <div class="tab-cnt-tit">商品房过户需要公安局开具亲属关系证明</div>
+                    <div class="tab-news-time">2017.08.20</div>
+                    <div class="tab-news-status news-status__done">已答复</div>
+                    <div class="tab-comment-status">评价</div>
+                  </li>
+                  <li>
+                    <div class="tab-cnt-tit">商品房过户需要公安局开具亲属关系证明</div>
+                    <div class="tab-news-time">2017.08.21</div>
+                    <div class="tab-news-status">未答复</div>
+                    <div class="tab-comment-status">评价</div>
+                  </li>
+                  <li>
+                    <div class="tab-cnt-tit">学生异地补办身份证</div>
+                    <div class="tab-news-time">2017.07.30</div>
+                    <div class="tab-news-status news-status__done">已答复</div>
+                    <div class="tab-comment-status  comment-status__done">已评价</div>
+                  </li>
+                </ul>
+                <div class="pg-wr">
+                  <div>上一页</div>
+                  <ul class="pg">
+                    <li class="pg__active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>...</li>
+                    <li>12</li>
+                  </ul>
+                  <div class="pg__active">下一页</div>
+                </div>
+              </div>
+              <div class="am-tab-panel" id="tab3">
+                <div class="tab-hd">
+                  <div class="tab-cnt-tit">业务名称</div>
+                  <div class="tab-news-num">办件单号</div>
+                  <div class="tab-comment-csr">满意度</div>
+                </div>
+                <ul class="tab-cnt">
+                  <li>
+                    <div class="tab-cnt-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
+                    <div class="tab-news-num">170913410221920206000601</div>
+                    <div class="tab-comment-csr">
+                      <i class="csr-full"></i>
+                      <i class="csr-full"></i>
+                      <i class="csr-full"></i>
+                      <i class="csr-full"></i>
+                      <i class="csr-full"></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="tab-cnt-tit">商品房过户需要公安局开具亲属关系证明</div>
+                    <div class="tab-news-num">170913410221920206000147</div>
+                    <div class="tab-comment-csr">
+                      <i class="csr-full"></i>
+                      <i class="csr-full"></i>
+                      <i class="csr-full"></i>
+                      <i class="csr-full"></i>
+                      <i class="csr-empty"></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="tab-cnt-tit">学生异地补办身份证</div>
+                    <div class="tab-news-num">170913410221920206000233</div>
+                    <div class="tab-comment-csr">
+                      <i class="csr-full"></i>
+                      <i class="csr-full"></i>
+                      <i class="csr-full"></i>
+                      <i class="csr-full"></i>
+                      <i class="csr-half"></i>
+                    </div>
+                  </li>
+                </ul>
+                <div class="pg-wr">
+                  <div>上一页</div>
+                  <ul class="pg">
+                    <li class="pg__active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>...</li>
+                    <li>12</li>
+                  </ul>
+                  <div class="pg__active">下一页</div>
+                </div>
+              </div>
+              <div class="am-tab-panel" id="tab4">
+                <div class="tab-hd">
+                  <div class="tab-cnt-tit">收藏列表</div>
+                  <div class="tab-news-time">收藏时间</div>
+                  <!-- <div class="tab-news-status">操作</div> -->
+                  <div class="tab-comment-status">操作</div>
+                </div>
+                <ul class="tab-cnt">
+                  <li>
+                    <div class="tab-cnt-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
+                    <div class="tab-news-time">2017.08.20</div>
+                    <!-- <div class="tab-news-status news-status__done">已办结</div> -->
+                    <div class="tab-comment-status action-del">删除</div>
+                  </li>
+                  <li>
+                    <div class="tab-cnt-tit">商品房过户需要公安局开具亲属关系证明</div>
+                    <div class="tab-news-time">2017.08.21</div>
+                    <!-- <div class="tab-news-status">办理中</div> -->
+                    <div class="tab-comment-status action-del">删除</div>
+                  </li>
+                  <li>
+                    <div class="tab-cnt-tit">学生异地补办身份证</div>
+                    <div class="tab-news-time">2017.07.30</div>
+                    <!-- <div class="tab-news-status news-status__done">已办结</div> -->
+                    <div class="tab-comment-status action-del">删除</div>
+                  </li>
+                </ul>
+                <div class="pg-wr">
+                  <div>上一页</div>
+                  <ul class="pg">
+                    <li class="pg__active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>...</li>
+                    <li>12</li>
+                  </ul>
+                  <div class="pg__active">下一页</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 个人信息 -->
+  <div class="modal-wrap am-hide" id="infos">
+    <div class="modal-bd">
+      <i class="modal-close"></i>
+      <div class="modal-tit">个人信息</div>
+      <form class="modal-form" onsubmit="">
+        <div class="form-group-inline">
+          <label for="" class="form-label">我的昵称:</label>
+          <input id="" type="text" class="form-widget" placeholder="请输入您的昵称">
+        </div>
+        <div class="form-group-inline">
+          <label for="" class="form-label">手机号码:</label>
+          <input id="" type="text" class="form-widget" placeholder="请输入您的手机号码">
+        </div>
+        <div class="form-group-inline">
+          <label for="" class="form-label">我的邮箱:</label>
+          <input id="" type="text" class="form-widget" placeholder="请输入您的邮箱地址">
+        </div>
+        <div class="form-group-inline" style="align-items:flex-start">
+          <label for="" class="form-label">我的地址:</label>
+          <div class="form-group-block">
+            <div class="groups-wr">
+              <div class="select-wr" style="margin-left:0">
+                <select name="city" id="">
+                  <option value="">郑州市</option>
+                  <option value="">开封市</option>
+                  <option value="">洛阳市</option>
+                </select>
+                <!-- FIXED: 下箭头覆盖下拉框 点箭头无法响应下拉 -->
+                <i class="icon-select"></i>
+              </div>
+              <div class="select-wr">
+                <select name="city" id="">
+                  <option value="">高新区</option>
+                  <option value="">金水区</option>
+                  <option value="">金明区</option>
+                </select>
+                <i class="icon-select"></i>
+              </div>
+            </div>
+            <input id="" type="text" class="form-widget" placeholder="请输入您的通信地址">
+          </div>
+        </div>
+        <input type="button" value="修改并保存" class="modal-form-btn">
+      </form>
+    </div>
+  </div>
+  <!-- 修改密码 -->
+  <div class="modal-wrap am-hide" id="changePSD">
+    <div class="modal-bd">
+      <i class="modal-close"></i>
+      <div class="modal-tit">修改密码</div>
+      <form class="modal-form" onsubmit="">
+        <div class="form-group-inline">
+          <label for="" class="form-label">旧密码:</label>
+          <input id="" type="password" class="form-widget" placeholder="请输入旧密码">
+        </div>
+        <div class="form-group-inline">
+          <label for="" class="form-label">新密码:</label>
+          <input id="" type="password" class="form-widget" placeholder="请输入新密码">
+        </div>
+        <div class="form-group-inline">
+          <label for="" class="form-label">确认新密码:</label>
+          <input id="" type="password" class="form-widget" placeholder="再输一遍确认新密码">
+        </div>
+        <input type="button" value="修改并保存" class="modal-form-btn">
+      </form>
+    </div>
+  </div>
+  <!-- 消息中心 -->
+  <div class="modal-wrap am-hide" id="msg">
+    <div class="modal-bd modal-msg">
+      <i class="modal-close"></i>
+      <div class="modal-tit">消息中心</div>
+      <div class="msg-wr">
+        <ul class="msg-cnt">
+          <li>
+            <i class="msg-status"></i>
+            <div class="msg-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
+            <div class="msg-time">2017.08.20</div>
+            <div class="msg-action action-del">删除</div>
+          </li>
+          <li>
+            <i class="msg-status msg-status__done"></i>
+            <div class="msg-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
+            <div class="msg-time">2017.08.21</div>
+            <div class="msg-action action-del">删除</div>
+          </li>
+        </ul>
+        <div class="pg-wr">
+          <div>上一页</div>
+          <ul class="pg">
+            <li class="pg__active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>...</li>
+            <li>12</li>
+          </ul>
+          <div class="pg__active">下一页</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 实名认证 -->
+  <div class="modal-wrap am-hide" id="identify">
+    <div class="modal-bd">
+      <i class="modal-close"></i>
+      <div class="modal-tit">实名认证</div>
+      <form class="modal-form" onsubmit="">
+        <div class="form-group-inline">
+          <label for="" class="form-label">真实姓名:</label>
+          <input id="" type="text" class="form-widget" placeholder="请输入真实姓名">
+        </div>
+        <div class="form-group-inline">
+          <label for="" class="form-label">身份证号:</label>
+          <input id="" type="text" class="form-widget" placeholder="请输入身份证号">
+        </div>
+        <div class="form-group-inline">
+          <label for="" class="form-label">手机号码:</label>
+          <input id="" type="text" class="form-widget" placeholder="请输入手机号码">
+        </div>
+        <div class="form-group-inline">
+          <label for="" class="form-label">手机号码:</label>
+          <div class="identify-status identify__success">实名认证已通过</div>
+          <div class="identify-status identify__ing am-hide">实名认证中</div>
+          <div class="identify-status am-hide">实名认证失败</div>
+        </div>
+        <input type="button" value="提交实名认证" class="modal-form-btn btn__disabled" disabled>
+      </form>
+    </div>
+  </div>
+</body>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script>
+  $(function () {
+    var services = $(".up-services").children("ul")
+    var myInfo = $("#myInfo")
+    var userClass = $("#userClass")
+    var identify = $(".identify-class").children("i")
+
+    identify.on("click", function (e) {
+      var identifyIndex = e.currentTarget.dataset.index
+      var utitle = "普通用户"
+      if ($(this).hasClass("identify__done")) {
+        switch (identifyIndex) {
+          case "0":
+            identify.removeClass("identify__done")
+            utitle = "普通用户"
+            break;
+          case "1":
+            identify.eq(2).removeClass("identify__done")
+            identify.eq(3).removeClass("identify__done")
+            identify.eq(4).removeClass("identify__done")
+            utitle = "实人实证用户"
+            break;
+          case "2":
+          case "3":
+          case "4":
+            utitle = "实人实名实证用户"
+            break;
+          default:
+            break;
+        }
+          $(this).removeClass("identify__done")
+      } else {
+        switch (identifyIndex) {
+          case "0":
+            identify.eq(0).addClass("identify__done")
+            utitle = "实人实证用户"
+            break;
+          case "1":
+          case "2":
+          case "3":
+          case "4":
+            identify.eq(0).addClass("identify__done")
+            identify.eq(1).addClass("identify__done")
+            $(this).addClass("identify__done")
+            utitle = "实人实名实证用户"
+            break;
+          default:
+            break;
+        }
+        // changeIdentify(identifyIndex)
+      }
+        userClass.text(utitle)
+    })
+
+
+    $(".msg-status").on("click", function () {
+      $(this).toggleClass("msg-status__done")
+    })
+    $(".modal-close").on("tap click", function (e) {
+      $(this).parents(".modal-wrap").addClass("am-hide")
+    })
+    myInfo.on("click", "li", function (e) {
+      myInfo.children("li").removeClass("items__active")
+      $(this).addClass("items__active")
+      var currentIndex = e.currentTarget.dataset.index
+      switch (currentIndex) {
+        case "1":
+          $("#infos").removeClass("am-hide")
+          break;
+        case "2":
+          $("#identify").removeClass("am-hide")
+          break;
+        case "3":
+          $("#msg").removeClass("am-hide")
+          break;
+        case "4":
+          $("#changePSD").removeClass("am-hide")
+          break;
+        default:
+          break;
+      }
+    })
+    $(".icon-last").on("click", function () {
+      var left = services.position().left
+      console.log(left);
+      if (left < 0) {
+        left += 122
+        services.animate({
+          left: left + "px"
+        })
+      }
+    })
+    $(".icon-next").on("click", function () {
+      var left = services.position().left
+      if (left >= 0) {
+        left -= 122
+        services.animate({
+          left: left + "px"
+        })
+      }
+    })
+    $(".action-del").on("click", function () {
+      $(this).parents("li").remove()
+    })
+    
+    /*----------  function change identify-icon  ----------*/
+    function changeIdentify(iconIndex){
+      var i = 0;
+      identify.removeClass("identify__done")
+      while (i <= iconIndex) {
+        identify.eq(i).addClass("identify__done")
+        ++i
+      }
+    }
+    
+  })
+</script>
+
+</html>

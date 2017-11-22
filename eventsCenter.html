@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>事项中心</title>
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/eventsCenter.css">
+</head>
+
+<body>
+  <!-- 导航 -->
+  <nav class="container nav-wr">
+    <ul class="nav-other bd">
+      <li>
+        <a href="index.html">首页</a>
+      </li>
+      <li class="nav-other-li__active">
+        <a href="###">事项中心</a>
+      </li>
+      <li>
+        <a href="./policyFiles.html">政策文件</a>
+      </li>
+      <li>
+        <a href="QAIntelligence.html">智能问答</a>
+      </li>
+      <li>
+        <a href="./appCenter.html">APP中心</a>
+      </li>
+      <li>
+        <a href="me.html">个人中心</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- 主体 -->
+  <div class="container bd-wr">
+    <div class="bd-cnt">
+      <div class="bd-cnt-l events">
+        <div class="bd-cnt-l-tit">事项中心</div>
+        <div class="bd-cnt-l-list-wr">
+          <div class="am-tabs" data-am-tabs>
+            <ul class="am-tabs-nav am-nav am-nav-tabs">
+              <li class="am-active">
+                <a href="#tab1">按警种</a>
+              </li>
+              <li>
+                <a href="#tab2">按地区</a>
+              </li>
+            </ul>
+            <div class="am-tabs-bd">
+              <div class="am-tab-panel am-active" id="tab1">
+                <div class="bd-cnt-l-list-tit" style="padding-top:25px">热门城市：</div>
+                <ul class="city-list">
+                  <li>
+                    <a href="###">北京</a>
+                  </li>
+                  <li>
+                    <a href="###">上海</a>
+                  </li>
+                  <li>
+                    <a href="###">广州</a>
+                  </li>
+                  <li>
+                    <a href="###">深圳</a>
+                  </li>
+                  <li>
+                    <a href="###">青岛</a>
+                  </li>
+                  <li>
+                    <a href="###">杭州</a>
+                  </li>
+                  <li>
+                    <a href="###">南京</a>
+                  </li>
+                  <li>
+                    <a href="###">合肥</a>
+                  </li>
+                  <li>
+                    <a href="###">郑州</a>
+                  </li>
+                  <li>
+                    <a href="###">西安</a>
+                  </li>
+                  <li>
+                    <a href="###">武汉</a>
+                  </li>
+                  <li>
+                    <a href="###">重庆</a>
+                  </li>
+                  <li>
+                    <a href="###">成都</a>
+                  </li>
+                  <li>
+                    <a href="###">长沙</a>
+                  </li>
+                  <li>
+                    <a href="###">长春</a>
+                  </li>
+                  <li>
+                    <a href="###">石家庄</a>
+                  </li>
+                </ul>
+                <div class="bd-cnt-l-list-tit">手动选择：</div>
+                <div class="select-wr">
+                  <select name="city" id="">
+                    <option value="">郑州市</option>
+                    <option value="">开封市</option>
+                    <option value="">洛阳市</option>
+                  </select>
+                  <!-- FIXED: 下箭头覆盖下拉框 点箭头无法响应下拉 -->
+                  <i class="icon-select"></i>
+                </div>
+                <div class="select-wr">
+                  <select name="city" id="">
+                    <option value="">高新区</option>
+                    <option value="">金水区</option>
+                    <option value="">金明区</option>
+                  </select>
+                  <i class="icon-select"></i>
+                </div>
+              </div>
+              <div class="am-tab-panel" id="tab2">
+                <ul class="bd-cnt-l-list jingzhong-list">
+                  <li>
+                    <span class="bd-cnt-l-list-txt">户证服务</span>
+                  </li>
+                  <li>
+                    <span class="bd-cnt-l-list-txt">交管服务</span>
+                  </li>
+                  <li>
+                    <span class="bd-cnt-l-list-txt">出入境业务</span>
+                  </li>
+                  <li>
+                    <span class="bd-cnt-l-list-txt">治安业务</span>
+                  </li>
+                  <li>
+                    <span class="bd-cnt-l-list-txt">消防业务</span>
+                  </li>
+                  <li>
+                    <span class="bd-cnt-l-list-txt">监管业务</span>
+                  </li>
+                  <li>
+                    <span class="bd-cnt-l-list-txt">网安业务</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bd-cnt-r">
+        <div class="form-r">
+          <input type="text" name="" placeholder="快速寻找你需要的文件" id="">
+          <button type="button">搜索</button>
+        </div>
+        <div class="am-tabs" data-am-tabs>
+          <ul class="am-tabs-nav am-nav am-nav-tabs">
+            <li class="am-active">
+              <a href="#tabR1">个人业务</a>
+            </li>
+            <li>
+              <a href="#tabR2">企业业务</a>
+            </li>
+            <li>
+              <a href="#tabR3">境外人士业务</a>
+            </li>
+          </ul>
+          <div class="am-tabs-bd">
+            <div class="am-tab-panel am-active" id="tabR1">
+              <!-- 列表 -->
+              <div class="events-hd">
+                <div class="events-name">业务名称</div>
+                <div class="events-comments">评论</div>
+                <div class="events-mark">收藏</div>
+              </div>
+              <ul class="events-list">
+                <li>
+                  <div class="events-name"><a href="./eventsDetails.html"> 出生登记</a>
+                    <a href="./eventsDetails.html?item=bszn" class="txt-guide">
+                      <i class="icon-file"></i>
+                      办事指南
+                    </a>
+                  </div>
+                  <div class="events-comments">
+                    <span class="txt__strong">6666</span>条</div>
+                  <i class="events-mark mark__marked"></i>
+                </li>
+                <li>
+                  <div class="events-name"><a href="./eventsDetails.html"> 涉外和市儿童福利院孤儿收养登记</a>
+                    <a href="./eventsDetails.html?item=bszn" class="txt-guide">
+                      <i class="icon-file"></i>
+                      办事指南
+                    </a>
+                  </div>
+                  <div class="events-comments">
+                    <span class="txt__strong">6666</span>条</div>
+                  <i class="events-mark"></i>
+                </li>
+                <li>
+                  <div class="events-name"><a href="./eventsDetails.html"> 计划生育手术并发症鉴定</a>
+                    <a href="./eventsDetails.html?item=bszn" class="txt-guide">
+                      <i class="icon-file"></i>
+                      办事指南
+                    </a>
+                  </div>
+                  <div class="events-comments">
+                    <span class="txt__strong">6666</span>条</div>
+                  <i class="events-mark mark__marked"></i>
+                </li>
+                <li>
+                  <div class="events-name"><a href="./eventsDetails.html"> 华侨收养三代以内旁系血亲子女登记</a>
+                    <a href="./eventsDetails.html?item=bszn" class="txt-guide">
+                      <i class="icon-file"></i>
+                      办事指南
+                    </a>
+                  </div>
+                  <div class="events-comments">
+                    <span class="txt__strong">6666</span>条</div>
+                  <i class="events-mark"></i>
+                </li>
+                <li>
+                  <div class="events-name"><a href="./eventsDetails.html"> 华侨撤销收养登记</a>
+                    <a href="./eventsDetails.html?item=bszn" class="txt-guide">
+                      <i class="icon-file"></i>
+                      办事指南
+                    </a>
+                  </div>
+                  <div class="events-comments">
+                    <span class="txt__strong">6666</span>条</div>
+                  <i class="events-mark"></i>
+                </li>
+                <li>
+                  <div class="events-name"><a href="./eventsDetails.html"> 台湾居民收养登记</a>
+                    <a href="./eventsDetails.html?item=bszn" class="txt-guide">
+                      <i class="icon-file"></i>
+                      办事指南
+                    </a>
+                  </div>
+                  <div class="events-comments">
+                    <span class="txt__strong">6666</span>条</div>
+                  <i class="events-mark"></i>
+                </li>
+              </ul>
+              <div class="pg-wr">
+                <div>上一页</div>
+                <ul class="pg">
+                  <li class="pg__active">1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>...</li>
+                  <li>12</li>
+                </ul>
+                <div class="pg__active">下一页</div>
+              </div>
+            </div>
+            <div class="am-tab-panel" id="tabR2">
+              <br>
+              <br>
+              企业业务
+            </div>
+            <div class="am-tab-panel" id="tabR3">
+              <br>
+              <br>
+              境外人士业务
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script>
+  $(function () {
+    $(".app-btn-erweima").mouseenter(function () {
+      $(this).siblings(".pop-erweima-wr").removeClass("am-hide")
+    })
+    $(".pop-erweima-wr").mouseleave(function (e) {
+      $(this).addClass("am-hide")
+    })
+    $("i.events-mark").on("click", function () {
+      $(this).toggleClass("mark__marked")
+    })
+  })
+</script>
+
+</html>

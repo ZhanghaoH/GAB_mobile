@@ -1,0 +1,267 @@
+.area.bd-cnt-l {
+  padding-bottom: 50px;
+}
+.area .bd-cnt-l-list-wr {
+  padding-left: 45px;
+  padding-right: 45px;
+  flex: auto;
+}
+.area .bd-cnt-l-list-tit {
+  color:#737373;
+  margin-bottom: 16px;
+  /* font-family:PingFangSC-Medium; */
+  font-size:12px;
+  letter-spacing:0.75px;
+}
+.area .city-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.city-list li>a {
+  display: block;
+  width: 40px;
+  padding: 5px 0;
+  text-align: center;
+  color:#79a9ee;
+  font-size:12px;
+  font-weight: bolder;
+  /* font-family:PingFangSC-Medium; */
+  letter-spacing:0.75px;
+}
+.city-list li {
+  width: fit-content;
+}
+.area .select-wr {
+  margin-bottom: 10px;
+}
+.select-wr {
+  width: 170px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #d2d2d2; */
+  height: 35px;
+}
+
+.select-wr select {
+  flex: auto;
+  line-height: 35px;
+  padding-left: 15px;
+  padding-right: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px 0 0 4px;
+  /* font-family:PingFangSC-Regular; */
+  font-size:12px;
+  color:#727272;
+  letter-spacing:0.86px;
+}
+.bd-cnt-r {
+  position: relative;
+  padding-top: 45px;
+}
+.form-r {
+  width: 310px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 35px;
+  top: 25px;
+}
+.form-r input {
+  padding:  0 15px;
+  height: 40px;
+  background:#ffffff;
+  border:1px solid #d2d2d2;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.05), 0 1px 2px 0 rgba(0,0,0,0.06);
+  border-radius:4px 0 0 4px;
+  width:253px;
+  /* font-family:PingFangSC-Regular; */
+  font-size:14px;
+  color:#727272;
+  letter-spacing:1px;
+}
+.form-r button {
+  height: 40px;
+  background:#327fdf;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.05), 0 1px 2px 0 rgba(0,0,0,0.06);
+  width:56px;
+  border-radius:0 4px 4px 0;
+  /* font-family:PingFangSC-Regular; */
+  font-size:12px;
+  color:#ffffff;
+  letter-spacing:0.86px;
+}
+i.icon-select {
+  background: #327fdf url("../i/icon_select.png") center center no-repeat;
+  background-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  width: 35px;
+  height: 35px;
+  border-radius: 0 4px 4px 0;
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+.app-list {
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+  list-style: none;
+  padding-top: 15px;
+}
+.app-list li {
+  background:#ffffff;
+  box-shadow:0 6px 9px 0 rgba(197,195,195,0.28);
+  width:225px;
+  height:254px;
+  margin-bottom: 25px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+.app-list li:nth-child(3n) {
+  margin-right: 0;
+} 
+i.app-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 6px;
+}
+.app-icon-beijingfuwuni {
+  background: url("../i/img_beijingfuwuni.png") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-beijinggongjijin {
+  background: url("../i/img_beijinggongjijin.png") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-beijingjiaojing {
+  background: url("../i/img_beijingjiaojing.png") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-beijingshebao {
+  background: url("../i/img_beijingshebao.png") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-henanjingmintong {
+  background: url("../i/img_henanjingmintong.png") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-pazy {
+  background: url("../i/pazy.jpg") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-gsga {
+  background: url("../i/gaosugongan.jpg") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-fzp {
+  background: url("../i/fzp.jpg") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-sqga {
+  background: url("../i/sqga.jpg") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-pajz {
+  background: url("../i/pajz.jpg") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-xcwj {
+  background: url("../i/xcwj.jpg") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-caw {
+  background: url("../i/icon_caw.jpg") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-guowuyuan {
+  background: url("../i/icon_guowuyuan.jpg") center center no-repeat;
+  background-size: 100%;
+}
+.app-icon-feizhu {
+  background: url("../i/feizhu.jpg") center center no-repeat;
+  background-size: 100%;
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
+}
+.app-icon-xxjb {
+  background: url("../i/icon_xxjb.png") center center no-repeat;
+  background-size: 100%;
+  /* border: 1px solid #d2d2d2; */
+  /* border-radius: 4px; */
+}
+.app-icon-fpzw {
+  background: url("../i/icon_fpzw.png") center center no-repeat;
+  background-size: 100%;
+  /* border: 1px solid #d2d2d2; */
+  /* border-radius: 4px; */
+}
+.app-icon-zzsb {
+  background: url("../i/icon_zzsb.png") center center no-repeat;
+  background-size: 100%;
+  /* border: 1px solid #d2d2d2; */
+  /* border-radius: 4px; */
+}
+
+.app-name {
+  /* font-family:PingFangSC-Medium; */
+  font-size:16px;
+  color:#000000;
+  letter-spacing:2px;
+  margin-top: 12px;
+}
+.app-desc-wr {
+  width: 185px;
+  padding-top: 10px;
+  margin-top: 25px;
+  border-top:1px solid #dddddd;
+  /* font-family:PingFangSC-Regular; */
+  font-size:12px;
+  color:#555759;
+  letter-spacing:0;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.app-btn-erweima {
+  width: 36px;
+  height: 36px;
+  background: url("../i/but_erweima.png") center center no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pop-erweima-wr {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(4,7,28,0.74);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.pop-erweima-img {
+  width: 120px;
+}
+.pop-erweima-txt {
+  margin-top: 20px;
+  /* font-family:PingFangSC-Medium; */
+  font-size:14px;
+  color:#ffffff;
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>APP中心</title>
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/appCenter.css">
+</head>
+
+<body>
+  <!-- 导航 -->
+  <nav class="container nav-wr">
+    <ul class="nav-other bd">
+      <li>
+        <a href="index.html">首页</a>
+      </li>
+      <li>
+        <a href="eventsCenter.html">事项中心</a>
+      </li>
+      <li>
+        <a href="./policyFiles.html">政策文件</a>
+      </li>
+      <li>
+        <a href="QAIntelligence.html">智能问答</a>
+      </li>
+      <li class="nav-other-li__active">
+        <a href="###">APP中心</a>
+      </li>
+      <li>
+        <a href="me.html">个人中心</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- 主体 -->
+  <div class="container bd-wr">
+    <div class="bd-cnt">
+      <div class="bd-cnt-l area">
+        <div class="bd-cnt-l-tit">APP中心</div>
+        <div class="bd-cnt-l-list-wr">
+          <div class="bd-cnt-l-list-tit">热门城市：</div>
+          <ul class="city-list">
+            <li>
+              <a href="###">北京</a>
+            </li>
+            <li>
+              <a href="###">上海</a>
+            </li>
+            <li>
+              <a href="###">广州</a>
+            </li>
+            <li>
+              <a href="###">深圳</a>
+            </li>
+            <li>
+              <a href="###">青岛</a>
+            </li>
+            <li>
+              <a href="###">杭州</a>
+            </li>
+            <li>
+              <a href="###">南京</a>
+            </li>
+            <li>
+              <a href="###">合肥</a>
+            </li>
+            <li>
+              <a href="###">郑州</a>
+            </li>
+            <li>
+              <a href="###">西安</a>
+            </li>
+            <li>
+              <a href="###">武汉</a>
+            </li>
+            <li>
+              <a href="###">重庆</a>
+            </li>
+            <li>
+              <a href="###">成都</a>
+            </li>
+            <li>
+              <a href="###">长沙</a>
+            </li>
+            <li>
+              <a href="###">长春</a>
+            </li>
+            <li>
+              <a href="###">石家庄</a>
+            </li>
+          </ul>
+          <div class="bd-cnt-l-list-tit">手动选择：</div>
+          <div class="select-wr">
+            <select name="city" id="">
+              <option value="">郑州市</option>
+              <option value="">开封市</option>
+              <option value="">洛阳市</option>
+            </select>
+            <!-- FIXED: 下箭头覆盖下拉框 点箭头无法响应下拉 -->
+            <i class="icon-select"></i>
+          </div>
+          <div class="select-wr">
+            <select name="city" id="">
+              <option value="">高新区</option>
+              <option value="">金水区</option>
+              <option value="">金明区</option>
+            </select>
+            <i class="icon-select"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bd-cnt-r">
+        <div class="form-r">
+          <input type="text" name="" placeholder="快速寻找你需要的文件" id="">
+          <button type="button">搜索</button>
+        </div>
+        <div class="am-tabs" data-am-tabs>
+          <ul class="am-tabs-nav am-nav am-nav-tabs">
+            <li class="am-active">
+              <a href="#tab1">APP</a>
+            </li>
+            <li>
+              <a href="#tab2">微信</a>
+            </li>
+            <li>
+              <a href="#tab3">支付宝城市服务模块</a>
+            </li>
+          </ul>
+          <div class="am-tabs-bd">
+            <div class="am-tab-panel am-active" id="tab1">
+              <ul class="app-list">
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/jmt.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-henanjingmintong"></i>
+                  <div class="app-name">河南警民通</div>
+                  <div class="app-desc-wr line-clamp">即“河南公安互联网便民服务平台”，目前已经具备了机动车违章查询、等便民服务功能</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/bjhyn.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-beijingfuwuni"></i>
+                  <div class="app-name">北京服务您</div>
+                  <div class="app-desc-wr line-clamp">“北京服务您”APP实现了多个复杂公共服务事项的移动端一站式办理</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/caw.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-caw"></i>
+                  <div class="app-name">中国长安网</div>
+                  <div class="app-desc-wr line-clamp">中国长安网是中共中央政法委员会、中央社会治安综合治理委员会官方新闻网站。</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/guowuyuan.jpg" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-guowuyuan"></i>
+                  <div class="app-name">国务院</div>
+                  <div class="app-desc-wr line-clamp">国务院客户端是国务院发布政务信息和提供在线服务的新媒体平台，由国务院办公厅主办，中国政府网运行中心负责运行维护。</div>
+                </li>
+              </ul>
+              <!-- <div class="pg-wr">
+                <div>上一页</div>
+                <ul class="pg">
+                  <li class="pg__active">1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>...</li>
+                  <li>12</li>
+                </ul>
+                <div class="pg__active">下一页</div>
+              </div> -->
+            </div>
+            <div class="am-tab-panel" id="tab2">
+              <ul class="app-list">
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/pazy.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-pazy"></i>
+                  <div class="app-name">平安中原</div>
+                  <div class="app-desc-wr line-clamp">河南省公安厅官方微博。</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/gsga.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-gsga"></i>
+                  <div class="app-name">河南高速公安</div>
+                  <div class="app-desc-wr line-clamp">全省高速公路路况信息、全省高速交警报警电话、交通违法查询等事项</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/fzp.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-fzp"></i>
+                  <div class="app-name">河南反虚假信息诈骗中心</div>
+                  <div class="app-desc-wr line-clamp">河南省反虚假信息诈骗中心官微。</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/sqga.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-sqga"></i>
+                  <div class="app-name">商丘公安</div>
+                  <div class="app-desc-wr line-clamp">商丘公安微警务平台。</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/pajz.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-pajz"></i>
+                  <div class="app-name">平安焦作</div>
+                  <div class="app-desc-wr line-clamp">发布最新警务要闻，提供贴心警方提示，搭建互动交流平台。</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/xcwj.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-xcwj"></i>
+                  <div class="app-name">许昌网上警局</div>
+                  <div class="app-desc-wr line-clamp">接受网上警局便民服务平台业务办理咨询。</div>
+                </li>
+              </ul>
+              <!-- <div class="pg-wr">
+                    <div>上一页</div>
+                    <ul class="pg">
+                      <li class="pg__active">1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>...</li>
+                      <li>12</li>
+                    </ul>
+                    <div class="pg__active">下一页</div>
+                  </div> -->
+            </div>
+            <div class="am-tab-panel" id="tab3">
+              <ul class="app-list">
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/zzsbk.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码查看</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-zzsb"></i>
+                  <div class="app-name">郑州社保卡服务</div>
+                  <div class="app-desc-wr line-clamp">郑州市社会保障卡公共服务平台查询、管理</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/xxjb.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码查看</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-xxjb"></i>
+                  <div class="app-name">网络不良信息举报中心</div>
+                  <div class="app-desc-wr line-clamp">12321网络不良信息举报受理中心</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/fpyz.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码查看</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-fpzw"></i>
+                  <div class="app-name">发票验真</div>
+                  <div class="app-desc-wr line-clamp">河南省地方税务局提供发票查询真伪服务。</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/jdmp.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码查看</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-feizhu"></i>
+                  <div class="app-name">景点门票</div>
+                  <div class="app-desc-wr line-clamp">飞猪景点门票服务</div>
+                </li>
+              </ul>
+              <!-- <div class="pg-wr">
+                    <div>上一页</div>
+                    <ul class="pg">
+                      <li class="pg__active">1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>...</li>
+                      <li>12</li>
+                    </ul>
+                    <div class="pg__active">下一页</div>
+                  </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script>
+  $(function () {
+    $(".app-btn-erweima").mouseenter(function () {
+      $(this).siblings(".pop-erweima-wr").removeClass("am-hide")
+    })
+    $(".pop-erweima-wr").mouseleave(function (e) {
+      $(this).addClass("am-hide")
+    })
+  })
+</script>
+
+</html>

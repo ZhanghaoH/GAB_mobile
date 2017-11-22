@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>智能问答</title>
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/QAIntelligence.css">
+</head>
+
+<body>
+
+  <nav class="container nav-wr">
+    <ul class="nav-other bd">
+      <li>
+        <a href="index.html">首页</a>
+      </li>
+      <li>
+        <a href="eventsCenter.html">事项中心</a>
+      </li>
+      <li>
+        <a href="policyFiles.html">政策文件</a>
+      </li>
+      <li class="nav-other-li__active">
+        <a href="">智能问答</a>
+      </li>
+      <li>
+        <a href="appCenter.html">APP中心</a>
+      </li>
+      <li>
+        <a href="me.html">个人中心</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container bd-wr">
+    <div class="bd-cnt">
+      <div class="bd-cnt-l">
+        <div class="bd-cnt-l-tit">智能问答</div>
+        <div class="bd-cnt-l-list-wr">
+          <div class="bd-cnt-l-list-tit">热点问题</div>
+          <ul class="bd-cnt-l-list">
+            <li>
+              <i class="top-hot">置顶</i>
+              <span class="bd-cnt-l-list-txt">关于申请消防注册师资格证书变更的相关问题</span>
+            </li>
+            <li>
+              <i class="fire-hot"></i>
+              <span class="bd-cnt-l-list-txt">关于机动车行驶证办理补正业务的相关问题</span>
+            </li>
+            <li>
+              <i class="fire-hot"></i>
+              <span class="bd-cnt-l-list-txt">关于不正当手段取得驾驶证的相关问题</span>
+            </li>
+            <li>
+              <i class="fire-hot"></i>
+              <span class="bd-cnt-l-list-txt">关于人身伤害案件伤情鉴定的相关问题</span>
+            </li>
+            <li>
+              <i class="fire-hot"></i>
+              <span class="bd-cnt-l-list-txt">关于申请异地补领居民身份证的相关问题</span>
+            </li>
+            <li>
+              <i class="fire-hot"></i>
+              <span class="bd-cnt-l-list-txt">关于办理申请普通护照的相关问题</span>
+            </li>
+            <li>
+              <i class="fire-hot"></i>
+              <span class="bd-cnt-l-list-txt">关于学习驾驶证明有效期的问题</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bd-cnt-r">
+        <div class="bd-cnt-r-chat-wr">
+          <ul class="bd-cnt-r-chat" id="chatList">
+            <li class="chat-client">
+              <div class="chat-infos">
+                <i class="chat-icon-client"></i>
+                <span>用户昵称</span>
+              </div>
+              <div class="chat-client-txt">出入境</div>
+            </li>
+            <li class="chat-robot">
+              <div class="chat-infos">
+                <i class="chat-icon-robot"></i>
+                <span>客服4396</span>
+              </div>
+              <div class="chat-robot-txt">
+                <span class="chat-txt-tit">您好，您是想问以下的问题吗？</span>
+                <ul class="chat-items">
+                  <li>中华人民共和国出入境通行证</li>
+                  <li>出入境证件真伪鉴定</li>
+                  <li>关于申请出入境中介机构经营许可证的相关问题</li>
+                  <li>出入境证件办理进度查询</li>
+                  <li>对因私出入境中介活动的监管</li>
+                  <li>对因私出入境中介机构经营许可证的相关问题</li>
+                </ul>
+                <span class="chat-txt-tit">还不是我想要的？转
+                  <span class="chat-txt__strong">人工客服</span>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <textarea class="bd-cnt-r-input-textarea" placeholder="在这里输入您想咨询的内容" id="askCnt"></textarea>
+        <div class="bd-cnt-r-input-actions">
+          <div class="input-actions-groups">
+            <i class="icon-emoji"></i>
+            <label for="file" style="font-size: 0">
+              <i class="icon-fujian"></i>
+            </label>
+            <label for="image" style="font-size: 0">
+              <i class="icon-tupian"></i>
+            </label>
+            <input type="file" name="file" id="file" style="position:absolute;opacity:0">
+            <input type="file" name="image" id="image" accept="image/gif,image/jpeg,image/jpg,image/png" style="position:absolute;opacity:0">
+          </div>
+          <button class="actions-btn-send" id="btnSend">发送</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script>
+  $(function () {
+    var chatList = $("#chatList")
+    $("#btnSend").on("click", function () {
+      var askCnt = $("#askCnt").val()
+      console.log(/\s+/.test(askCnt));
+      if (/\s+/.test(askCnt) || askCnt === "") {
+
+      } else {
+        var chatClient =
+          `<li class="chat-client">
+              <div class="chat-infos">
+                <i class="chat-icon-client"></i><span>用户昵称</span>
+              </div>
+              <div class="chat-client-txt">${askCnt}</div>
+            </li>`
+        chatList.append(chatClient)
+      }
+    })
+
+  })
+</script>
+
+</html>

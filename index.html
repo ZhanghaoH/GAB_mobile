@@ -1,0 +1,616 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>公安互联网+政务服务平台首页</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+
+<body>
+  <!-- logo -->
+  <div class="container logo-wrap">
+    <div class="logo bd">
+      <div class="logo-txt">公安部互联网+</div>
+      <img class="logo-img" src="./assets/i/img_logo.png" />
+      <div class="logo-txt">政务服务平台</div>
+    </div>
+  </div>
+
+  <!-- navigation & search -->
+  <div class="container nav-wrap" style="border-top: 2px solid #f4e271">
+    <nav class="nav">
+      <ul class="nav-list bd" id="indexNav">
+        <li class="nav-li__active">
+          <a href="###">首页</a>
+        </li>
+        <li>
+          <a href="eventsCenter.html">事项中心</a>
+        </li>
+        <li>
+          <a href="policyFiles.html">政策文件</a>
+        </li>
+        <li>
+          <a href="QAIntelligence.html">智能问答</a>
+        </li>
+        <li>
+          <a href="appCenter.html">APP中心</a>
+        </li>
+        <li>
+          <a href="javascript:login();">个人中心</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- search -->
+    <div class="search-container">
+      <form class="search-form am-form-inline">
+        <div class="am-form-group" style="position:relative">
+          <select id="area" class="select-area">
+            <option value="option1">北京市</option>
+            <option value="option2">郑州市</option>
+            <option value="option3">杭州市</option>
+            <option value="option3">乌鲁木齐市</option>
+          </select>
+          <span class="select-caret"></span>
+        </div>
+        <!-- <div class="am-form-group"> -->
+        <input type="text" class="input-key" id="search_cnt" placeholder="快速搜索你想要的服务">
+        <!-- </div> -->
+        <span class="btn-container">
+          <input type="button" value="搜索" class="am-btn btn-search">
+        </span>
+        <span class="btn-container">
+          <input type="button" value="高级搜索" class="am-btn btn-search" style="background:transparent;box-shadow:none">
+        </span>
+      </form>
+      <div class="search-key-container">
+        <div class="search-key-label">热门搜索:</div>
+        <ul class="search-key">
+          <li>
+            <a href="">出入境业务预约</a>
+          </li>
+          <li>
+            <a href="">河南省警民通</a>
+          </li>
+          <li>
+            <a href="">机动车车检</a>
+          </li>
+          <li>
+            <a href="">广州微警</a>
+          </li>
+          <li>
+            <a href="">公民出国办证须知</a>
+          </li>
+          <li>
+            <a href="">旅馆业办证许可
+            </a>
+          </li>
+          <li>
+            <a href="">购房入户
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="pop-wrap am-hide">
+        <div class="am-tabs" data-am-tabs>
+          <ul class="am-tabs-nav am-nav am-nav-tabs">
+            <li class="am-active">
+              <a href="#tab1">热门搜索</a>
+            </li>
+            <li>
+              <a href="#tab2">服务事项</a>
+            </li>
+            <li>
+              <a href="#tab3">办事指南</a>
+            </li>
+            <li>
+              <a href="#tab4">相关APP</a>
+            </li>
+            <li>
+              <a href="#tab5">常见问题</a>
+            </li>
+            <li>
+              <a href="#tab6">政策文件</a>
+            </li>
+          </ul>
+          <div class="am-tabs-bd">
+            <div class="am-tab-panel am-active" id="tab1">
+              <ul class="hot-tab-cnt">
+                <li>
+                  <a href="">出入境证件办理</a>
+                </li>
+                <li>
+                  <a href="">因私出入境中介机构资质办证指南</a>
+                </li>
+                <li>
+                  <a href="">关于未成年人申请出入境证件的相关问题</a>
+                </li>
+                <li class="hot-vnt-bordert">
+                  <a href="" class="hot-cnt-tuwen">
+                    <div class="hot-cnt-tu">
+                      <img src="assets/i/img_beijinghuanyingni@2x.png" alt="北京服务您" width="58" height="58">
+                    </div>
+                    <div class="hot-cnt-wen">
+                      <div class="wen-tit">北京服务您</div>
+                      <div class="wen-desc line-clamp">“北京服务您”APP实现了多个复杂公共服务事项的移动端一站式办理，为广大市民的政务生活变得更加便捷。</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="hot-vnt-bordert">
+                  <a href="" class="hot-cnt-wen">
+                    <div class="wen-tit">公安部出入境管理局负责人就启用电子台胞证答记者问</div>
+                    <ol class="hot-cnt-qa">
+                      <li>
+                        <div class="hot-qa-q">和现行证件相比，电子台胞证有哪些明显的变化？</div>
+                        <div class="hot-qa-a line-clamp">答：电子台胞证最明显的变化由两个方面：一是采用了卡式证件的形式，携带使用变得更为方便；二是取消了签注区，进一步落实了取消台胞签注政策规定。此外，我们对卡面可视…</div>
+                      </li>
+                      <!-- <li>
+                        <div class="hot-qa-q">和现行证件相比，电子台胞证有哪些明显的变化？</div>
+                        <div class="hot-qa-a line-clamp">答：电子台胞证最明显的变化由两个方面：一是采用了卡式证件的形式，携带使用变得更为方便；二是取消了签注区，进一步落实了取消台胞签注政策规定。此外，我们对卡面可视…</div>
+                      </li> -->
+                    </ol>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="am-tab-panel" id="tab2">服务事项</div>
+            <div class="am-tab-panel" id="tab3">办事指南</div>
+            <div class="am-tab-panel" id="tab4">相关APP</div>
+            <div class="am-tab-panel" id="tab5">常见问题</div>
+            <div class="am-tab-panel" id="tab6">政策文件</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bd" style="height:588px;position:relative">
+    <div class="bd up">
+      <ul class="menu">
+        <li style="background:#198cff;">
+          <a href="">
+            <i class="menu-icon menu-icon-sfzbl"></i>
+            <span class="menu-txt">身份证办理
+              <br>进度查询</span>
+          </a>
+        </li>
+        <li style="background:#4ca6ff;">
+          <a href="">
+            <i class="menu-icon menu-icon-crjyy"></i>
+            <span class="menu-txt">出入境业务
+              <br>预约</span>
+          </a>
+        </li>
+        <li style="background:#80bfff;">
+          <a href="">
+            <i class="menu-icon menu-icon-csdj"></i>
+            <span class="menu-txt">出生登记</span>
+          </a>
+        </li>
+        <li style="background:#99ccff;">
+          <a href="">
+            <i class="menu-icon menu-icon-jzzsb"></i>
+            <span class="menu-txt">居住证申报
+              <br>登记</span>
+          </a>
+        </li>
+        <li style="background:#66b3ff;">
+          <a href="">
+            <i class="menu-icon menu-icon-ldrkyd"></i>
+            <span class="menu-txt">流动人口异地办理
+              <br>出入境证件须知</span>
+          </a>
+        </li>
+        <li style="background:#3b9dff;">
+          <a href="">
+            <i class="menu-icon menu-icon-jszhb"></i>
+            <span class="menu-txt">驾驶证
+              <br>换证/补证</span>
+          </a>
+        </li>
+      </ul>
+      <div class="cnt-wrap news">
+        <div class="cnt-left" style="height:298px">
+          <div class="news-list-wr">
+            <!-- <ul class="news-list">
+              <li class="news-active">
+                <div class="news-hd am-text-truncate">郑州警方“践行十九大、民警听民声”主题活动邀请首批特邀观察员座谈</div>
+                <div class="news-bd line-clamp news-txt">河南某公安部举办对抗训练赛，提升同志们的实战技能，为工作中遇到危机时刻时作出快速反应提供了珍贵的技巧</div>
+              </li>
+              <li>
+                <a href="" class="news-link am-text-truncate">郑州市公安机关组织民警收听收看党的十九大开幕会</a>
+                <span class="news-txt">(10-16)</span>
+              </li>
+              <li>
+                <a href="" class="news-link am-text-truncate">郑州市公安局召开党委扩大会 要求全市公安机关迅速掀起学习宣传贯彻十九大精神的热潮</a>
+                <span class="news-txt">(10-16)</span>
+              </li>
+              <li>
+                <a href="" class="news-link am-text-truncate">•郑州警方深入开展大排查、大整治、大管控</a>
+                <span class="news-txt">(10-16)</span>
+              </li>
+            </ul> -->
+            <ul class="news-list">
+              <li>
+                <div class="news-active">
+                  <div class="news-hd am-text-truncate">郑州警方“践行十九大、民警听民声”主题活动邀请首批特邀观察员座谈</div>
+                  <div class="news-bd line-clamp news-txt">郑州市公安局召开以“三问两提一转”为主线的“践行十九大、民警听民声”主题活动新闻发布会，向广大市民发放调查问卷，诚挚邀请社会各界为郑州公安工作和队伍建设“把脉问诊”</div>
+                </div>
+                <div class="news-static am-hide">
+                  <a href="" class="news-link am-text-truncate">•郑州警方“践行十九大、民警听民声”主题活动邀请首批特邀观察员座谈</a>
+                  <span class="news-txt" >(11-08)</span>
+                </div>
+              </li>
+              <li>
+                <div class="news-active am-hide">
+                  <div class="news-hd am-text-truncate">郑州市公安机关组织民警收听收看党的十九大开幕会</div>
+                  <div class="news-bd line-clamp news-txt">10月18日上午9时，举世瞩目的中国共产党第十九次全国代表大会在北京隆重开幕。郑州全市公安机关第一时间组织民警认真收听收看了开幕会实况直播，聆听习近平总书记代表第十八届中央委员会所作的工作报告。</div>
+                </div>
+                <div class="news-static">
+                  <a href="" class="news-link am-text-truncate">•郑州市公安机关组织民警收听收看党的十九大开幕会</a>
+                  <span class="news-txt" >(11-01)</span>
+                </div>
+              </li>
+              <li>
+                <div class="news-active am-hide">
+                  <div class="news-hd am-text-truncate">郑州市公安局召开党委扩大会 要求全市公安机关迅速掀起学习宣传贯彻十九大精神的热潮</div>
+                  <div class="news-bd line-clamp news-txt">为传达学习十九大精神，贯彻落实市委常委扩大会议关于学习十九大精神的安排部署，10月29日上午，郑州市公安局召开党委扩大会议，对全市公安机关进一步学习宣传贯彻十九大精神工作进行动员、安排和部署。郑州市政府副市长、市公安局局长马义中出席会议并讲话，要求全市公安机关迅速掀起学习宣传贯彻十九大精神的热潮。全市公安机关各警种、各部门、各分县（市）局主要领导同志参加会议。</div>
+                </div>
+                <div class="news-static">
+                  <a href="" class="news-link am-text-truncate">•郑州市公安局召开党委扩大会 要求全市公安机关迅速掀起学习宣传贯彻十九大精神的热潮</a>
+                  <span class="news-txt" >(10-29)</span>
+                </div>
+              </li>
+              <li>
+                <div class="news-active am-hide">
+                  <div class="news-hd am-text-truncate">郑州警方深入开展大排查、大整治、大管控</div>
+                  <div class="news-bd line-clamp news-txt">为强化社会面治安防控，确保省会郑州社会政治治安大局持续平稳，目前郑州警方深入推进大排查、大整治、大控工作，组织特警、交警、治安、派出所等警力在全市设置22个高速出入市卡口和2个平角卡口（新黄河大桥和老黄河大桥），对出入市的可疑车辆、人员、物品进行设卡盘查。</div>
+                </div>
+                <div class="news-static">
+                  <a href="" class="news-link am-text-truncate">•郑州警方深入开展大排查、大整治、大管控</a>
+                  <span class="news-txt" >(10-11)</span>
+                </div>
+              </li>
+            </ul>
+            <div class="pop-triangle"></div>
+          </div>
+          <div class="am-slider am-slider-default news-slider" id="news-slider">
+            <ul class="am-slides">
+              <li>
+                <img src="http://www.zhengzhouga.gov.cn/u/cms/zzga/201711/08182729apqw.jpg" />
+              </li>
+              <li>
+                <img src="http://www.zhengzhouga.gov.cn/u/cms/zzga/201711/01113302rhb8.jpg" />
+              </li>
+              <li>
+                <img src="http://www.zhengzhouga.gov.cn/u/cms/zzga/201710/29174848bopp.jpg" />
+              </li>
+              <li>
+                <img src="http://www.zhengzhouga.gov.cn/u/cms/zzga/201710/11142037wxqh.jpg" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cnt-right" style="height:298px;background: #f5fbff;">
+          <div class="cnt-tit">
+            <i class="tit"></i>政策文件
+            <i class="cnt-more" style="cursor:pointer" onclick="javascript:window.location.assign('./policyFiles.html')"></i>
+          </div>
+          <ul class="cnt-policies">
+            <li>
+              <i class="date" style="background:url(./assets/i/date_1.png) center center no-repeat;background-size:100% 100%">
+                <span class="month">10月</span>
+                <br>
+                <span class="day">23</span>
+              </i>
+              <a href="./policyFiles.html">李克强签署国务院令公布《国务院关于修改部分行》 | 全文
+                <span class="time">(10-23)</span>
+              </a>
+            </li>
+            <li>
+              <i class="date" style="background:url(./assets/i/date_2.png) center center no-repeat;background-size:100% 100%">
+                <span class="month">10月</span>
+                <br>
+                <span class="day">22</span>
+              </i>
+              <a href="./policyFiles.html">国务院一周新政[10.14—10.20]
+                <span class="time">(10-22)</span>
+              </a>
+            </li>
+            <li>
+              <i class="date" style="background:url(./assets/i/date_3.png) center center no-repeat;background-size:100% 100%">
+                <span class="month">10月</span>
+                <br>
+                <span class="day">22</span>
+              </i>
+              <a href="./policyFiles.html">国务院发文部署开展第三次全国土地调查解读 | 全文
+                <span class="time">(10-22)</span>
+              </a>
+            </li>
+            <li>
+              <i class="date" style="background:url(./assets/i/date_4.png) center center no-repeat;background-size:100% 100%">
+                <span class="month">10月</span>
+                <br>
+                <span class="day">13</span>
+              </i>
+              <a href="./policyFiles.html">国务院办公厅发文部署积极推进供应链创新与全文 | 解读
+                <span class="time">(10-13)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cnt-wrap issues">
+        <div class="cnt-left" style="height:280px">
+          <div class="cnt-ques-wrap">
+            <div class="cnt-tit">
+              <i class="tit"></i>热点问题
+              <i class="cnt-more" style="cursor:pointer" onclick="javascript:window.location.assign('./QAIntelligence.html')"></i>
+            </div>
+            <ul class="cnt-ques">
+              <li>
+                <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="./QAIntelligence.html">•关于申请客车驾驶员的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="./QAIntelligence.html">•关于申请客车驾驶员的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="./QAIntelligence.html">•关于申请客车驾驶员的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="cnt-module">
+            <a class="cnt-module-qa" href="./QAIntelligence.html">
+              <i class="qa"></i>
+              <span>智能问答</span>
+            </a>
+            <a class="cnt-module-app" href="./appCenter.html">
+              <i class="app"></i>
+              <span>APP中心</span>
+            </a>
+          </div>
+        </div>
+        <div class="cnt-right " style="height:280px">
+          <div class="cnt-tit">
+            <i class="tit"></i>热点事项
+            <i class="cnt-more" style="cursor:pointer" onclick="javascript:window.location.assign('./eventsCenter.html')"></i>
+          </div>
+          <ul class="cnt-ques">
+            <li>
+              <i class="index index-hot"></i>
+              <a href="./eventsCenter.html">大中专院校录取学生迁入</a>
+            </li>
+            <li>
+              <i class="index index-hot"></i>
+              <a href="./eventsCenter.html">变更文化程度、婚姻状况</a>
+            </li>
+            <li>
+              <i class="index index-hot"></i>
+              <a href="./eventsCenter.html">转业、复员、退伍军人入户</a>
+            </li>
+            <li>
+              <i class="index index-warm"></i>
+              <a href="./eventsCenter.html">子女投靠父母</a>
+            </li>
+            <li>
+              <i class="index"></i>
+              <a href="./eventsCenter.html">务工人员入户</a>
+            </li>
+            <li>
+              <i class="index"></i>
+              <a href="./eventsCenter.html">回国（恢复）户口</a>
+            </li>
+            <li>
+              <i class="index"></i>
+              <a href="./eventsCenter.html">准迁证补发</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="flink">
+    <div class="bd">
+      <div class="cnt-tit">
+        <i class="tit"></i>友情链接
+      </div>
+      <ul class="flink-ul">
+        <li>
+          <a href="http://www.gov.cn/">
+            <img src="assets/i/img_gov@2x.png" alt="中国政府网">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.chinapeace.gov.cn/">
+            <img src="assets/i/img_chinapeace@2x.png" alt="中国长安网">
+          </a>
+        </li>
+        <li>
+          <a href="http://qzlx.people.com.cn/">
+            <img src="assets/i/img_people@2x.png" alt="群众路线网">
+          </a>
+        </li>
+        <!-- <li>
+          <a href="http://wzzx.71.cn/">
+            <img src="assets/i/img_lilunwuzhangzaixian@2x.png" alt="中央国家机关理论在线">
+          </a>
+        </li> -->
+        <li>
+          <a href="http://www.mps.gov.cn/">
+            <img src="assets/i/img_12388@2x.png" alt="中华人民共和国公安部">
+          </a>
+        </li>
+        <li>
+          <a href="http://zygjjg.12388.gov.cn">
+            <img src="assets/i/img_mps@2x.png" alt="中央国家机关举报网站">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="copr">版权所有：中华人民共和国公安部</div>
+    <div class="hr"></div>
+    <div class="info">
+      <p>
+        <span style="margin-right:16px">京公网安备&emsp;11010102000001号</span>
+        <span>京ICP备05070602号</span>
+      </p>
+      <p>
+        <span style="margin-right:20px">地址：北京市东长安街14号</span>
+        <span>邮编：100741</span>
+      </p>
+    </div>
+    <div class="info-img">
+      <img src="assets/i/img_dangzhengjiguan@2x.png" alt="党政机关" width="44" height="31" style="margin-right:16px">
+      <img src="assets/i/img_zhaocuo@2x.png" alt="政府网站找错" width="44" height="31">
+    </div>
+  </div>
+  <div class="modal-wrap am-hide">
+    <div class="login-modal">
+      <i class="modal-close"></i>
+      <div class="login-tit">欢迎使用</div>
+      <div class="login-hd">公安部互联网+政务服务平台</div>
+      <form class="login-form" onsubmit="">
+        <div class="form-group">
+          <i class="icon-user"></i>
+          <input type="text" class="form-field" placeholder="请输入您的手机号">
+        </div>
+        <div class="form-group">
+          <i class="icon-psd"></i>
+          <input type="password" class="form-field" placeholder="请输入您的密码">
+        </div>
+        <input type="button" value="登录" class="btn-login" id="btnLogin">
+      </form>
+      <div class="oper-wrap">
+        <a href="">注册用户</a>
+        <a href="">忘记密码?</a>
+      </div>
+    </div>
+  </div>
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="assets/js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+  <script src="assets/js/amazeui.min.js"></script>
+</body>
+<script>
+  $(document).ready(function () {
+    var modalLogin = $(".modal-wrap")
+    var pop = $(".pop-wrap")
+    var indexNavLis = $("#indexNav").children("li")
+    var popTriangle = $(".pop-triangle")
+    var newIndex = 0
+    var topArr = [78, 124, 170, 216]
+    var newsLis = $(".news-list").children("li")
+    var newsActive = $(".news-active")
+    var newsStatic = $(".news-static")
+    $(".modal-close").on("tap click", function () {
+      modalLogin.addClass("am-hide")
+    })
+    $("input#search_cnt").click(function () {
+      pop.removeClass("am-hide")
+    })
+    $("input#search_cnt").blur(function () {
+      pop.addClass("am-hide")
+    })
+    $("#indexNav").on("click", "li", function () {
+      indexNavLis.removeClass("nav-li__active")
+      $(this).addClass("nav-li__active")
+    })
+    $("#btnLogin").on("click", function () {
+      window.location.assign("me.html")
+    })
+    function slides(){
+      newIndex++ 
+      newIndex = newIndex > 3 ? 0 : newIndex
+      newsStatic.removeClass("am-hide")
+      newsActive.addClass("am-hide")
+      newsLis.eq(newIndex).find(".news-static").addClass("am-hide")
+      newsLis.eq(newIndex).find(".news-active").removeClass("am-hide")
+      popTriangle.animate({
+        "top": topArr[newIndex] + "px"
+      }, 500)
+      $('#news-slider').flexslider('next');
+      setTimeout(slides, 1500)
+    }
+    setTimeout(slides, 1500);
+    // 激活轮播图
+    $("#news-slider").flexslider({
+      animation: "slide", // String: ["fade"|"slide"]，动画效果
+      easing: "swing", // String: 滚动动画计时函数
+      direction: "horizontal", // String: 滚动方向 ["horizontal"|"vertical"]
+      reverse: false, // Boolean: 翻转 slide 运动方向
+      animationLoop: true, // Boolean: 是否循环播放
+      smoothHeight: false, // Boolean: 当 slide 图片比例不一样时
+      // "true": 父类自动适应图片高度
+      // "false": 不自动适应，父类高度为图片的最高高度，默认为false
+
+      slideshow: false, // Boolean: 是否自动播放
+      slideshowSpeed: 1500, // Integer: ms 滚动间隔时间
+
+      // Usability features
+      pauseOnAction: false, // Boolean: 用户操作时停止自动播放
+      pauseOnHover: false, // Boolean: 悬停时暂停自动播放
+      useCSS: true, // Boolean: 是否使用 css3 transition
+      touch: true, // Boolean: 允许触摸屏触摸滑动滑块
+      video: false, // Boolean: 使用视频的 slider，防止 CSS3 3D 变换毛刺
+      directionNav: false,
+    })
+
+    function login() {
+      modalLogin.removeClass("am-hide")
+    }
+    window.login = login
+  });
+</script>
+
+</html>
